@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A5DE792-B9B8-4E96-B96D-B6170E440718}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Admin.My.MyApplication</StartupObject>
+    <RootNamespace>Admin</RootNamespace>
+    <AssemblyName>Admin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="acclListBar, Version=1.0.1326.27884, Culture=neutral, PublicKeyToken=6e1b8f817e866f76">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vb_net\MyFormsLibrary\acclListBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Client, Version=1.8.0.0, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Google\Google Data API SDK\Redist\Google.GData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Spreadsheets, Version=1.8.0.0, Culture=neutral, PublicKeyToken=3f77feb76ff0d9a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Google\Google Data API SDK\Redist\Google.GData.Spreadsheets.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClickOnce\FormMyRuty.Designer.vb">
+      <DependentUpon>FormMyRuty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClickOnce\FormMyRuty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckUtenti.Designer.vb">
+      <DependentUpon>FormCheckUtenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckUtenti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompareUtenti.Designer.vb">
+      <DependentUpon>FormCompareUtenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCompareUtenti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDelete.Designer.vb">
+      <DependentUpon>FormDelete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImport.Designer.vb">
+      <DependentUpon>FormImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegioniProvinceComuni.Designer.vb">
+      <DependentUpon>FormRegioniProvinceComuni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegioniProvinceComuni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="www.trova-libro.it\FormImportFromExcel.Designer.vb">
+      <DependentUpon>FormImportFromExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="www.trova-libro.it\FormImportFromExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSendEmailInvitation.Designer.vb">
+      <DependentUpon>FormSendEmailInvitation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSendEmailInvitation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTest.Designer.vb">
+      <DependentUpon>FormTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OldTrovaLibroManager.vb" />
+    <Compile Include="TrovaLibroManager.vb" />
+    <Compile Include="www.cerco-vendo-casa.it\FormSendEmail.Designer.vb">
+      <DependentUpon>FormSendEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="www.cerco-vendo-casa.it\FormSendEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormCheckUtenti.resx">
+      <DependentUpon>FormCheckUtenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompareUtenti.resx">
+      <DependentUpon>FormCompareUtenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDelete.resx">
+      <DependentUpon>FormDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImport.resx">
+      <DependentUpon>FormImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegioniProvinceComuni.resx">
+      <DependentUpon>FormRegioniProvinceComuni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="www.trova-libro.it\FormImportFromExcel.resx">
+      <DependentUpon>FormImportFromExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSendEmailInvitation.resx">
+      <DependentUpon>FormSendEmailInvitation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTest.resx">
+      <DependentUpon>FormTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="www.cerco-vendo-casa.it\FormSendEmail.resx">
+      <DependentUpon>FormSendEmail.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MyFramework4.5\MyFormsLibrary\MyFormsLibrary.vbproj">
+      <Project>{351B091E-FCE0-4147-812C-CEC11BB58B8A}</Project>
+      <Name>MyFormsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MyFramework4.5\MyControlsLibrary\MyControlsLibrary.vbproj">
+      <Project>{51f7fe01-a10b-4fb3-8804-137e084b8646}</Project>
+      <Name>MyControlsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MyFramework4.5\MyManagerCSharp\MyManagerCSharp.csproj">
+      <Project>{1cfb1797-36c1-4887-b980-747fcc81d6a1}</Project>
+      <Name>MyManagerCSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MyFramework4.5\MyManager\MyManager.vbproj">
+      <Project>{245337a0-76c0-47a7-91df-8bab4f54e6b9}</Project>
+      <Name>MyManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MyFramework4.5\MyUsers\MyUsers.csproj">
+      <Project>{de537bc0-c7b3-4f38-9de2-5757d6d3999e}</Project>
+      <Name>MyUsers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mage\3.5\mage.exe" />
+    <Content Include="Mage\4.0\mage.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
